@@ -9,6 +9,9 @@ body to get the data. Curl with post to http://localhost:3000/api/v1/locations,
 ## Bonus
 - why persisting on the filesystem or in browser memory is bad BAD?
 
+![](../images/02.gif)
+
+
 ## Steps:
 
 ### - install babel-cli and babel plugins & presets as devDependencies
@@ -52,5 +55,9 @@ and see that http://localhost:3000/static, http://localhost:3000/locations?num=2
 ```
 curl -H "Content-Type: application/json" -X POST -d '{"country": "Russia", "city": "St.Petersburg", "numEmployees": 1}' http://localhost:3000/location
 ```
+- (should return you location you've added with generated id)
 
-- (should return you list of locations with your location added)
+```
+curl  http://localhost:3000/locations
+```
+- (should return you all locations, included the one you added in your pervious curl call)

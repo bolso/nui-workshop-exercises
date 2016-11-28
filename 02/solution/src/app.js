@@ -1,3 +1,3 @@
-//put "Hello world into div with id='val'"
+//put "Hello world into div with id='root'"
 let name = "Val";
-document.getElementById("val").innerHTML = `Hello World! My name is ${name}`;
+document.getElementById("root").innerHTML = `Hello World! My name is ${name}`;
