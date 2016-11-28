@@ -7,6 +7,7 @@ Go to http://localhost:3000/static and see “Hello world” page
 - Create a simple JSON service that returns an array of locations of size N where N is passed into the service as a query a parameter.
 curl ‘http://localhost:3000/api/v1/locations?num=5 will result in [{loc1},{loc2}, …,{loc5}]
 
+![](../images/01.gif)
 
 ## Steps:
 ### - Verify node version:
@@ -54,7 +55,6 @@ npm install --save uuid
 
 ### - start node and test your app
 ```
-cd 01\solution
 node src/server.js
 ```
 - point your browser to http://localhost:3000/static and make sure you see  "Hello world"
