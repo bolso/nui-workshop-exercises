@@ -26,7 +26,7 @@ export default React.createClass({
 
     render() {
         let {locations} = this.state;
-        let {content, title, children} = this.props;
+        let {content, children} = this.props;
 
         return (
             <div>
@@ -37,7 +37,7 @@ export default React.createClass({
                 <hr />
 
                 {React.cloneElement(content || children, {
-                    ...{locations}, ...{addLocationFn: this.addLocation}})
+                    ...{locations}, ...{addLocation: this.addLocation}})
                 }
 
             </div>

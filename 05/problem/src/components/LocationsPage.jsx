@@ -40,7 +40,7 @@ export default React.createClass({
         return (
             <div>
                 <LocationsList {...{locations}}/>
-                <LocationForm addLocationFn={this.addLocation} />
+                <LocationForm addLocation={this.addLocation} />
             </div>
         )
     }

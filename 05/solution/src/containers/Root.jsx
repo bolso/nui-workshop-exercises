@@ -1,4 +1,3 @@
-
 import React  from 'react';
 import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
 

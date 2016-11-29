@@ -3,7 +3,7 @@ import React  from 'react';
 export default React.createClass({
     render() {
 
-        let {addLocationFn} = this.props;
+        let {addLocation} = this.props;
 
         return (
             <div>
@@ -18,7 +18,7 @@ export default React.createClass({
                     {' '}
 
                 <button onClick={() => (
-                    addLocationFn({
+                    addLocation({
                         city: this.refs.city.value,
                         country: this.refs.country.value,
                         numEmployees: this.refs.numEmployees.value
