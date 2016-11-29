@@ -4,6 +4,7 @@
 - create components/Page.js with fetch locations service, and rendering locations list as <ul>
 - create config for bundling the file
 
+![](../images/03.gif)
 
 ## Steps:
 

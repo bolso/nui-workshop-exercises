@@ -35,5 +35,5 @@ export const updateLocation = (location) => {
             ...locations.slice(idx+1)
         ]
     }
-    return locations;
+    return location;
 }
