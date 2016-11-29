@@ -12,15 +12,17 @@ app.use("/static", express.static("static"));
 app.use("/dist", express.static("dist"));
 
 
-app.get("/locations" , (req, res) => {
+let router = express.Router();
+router.get("/locations" , (req, res) => {
     res.set("Content-Type", "application/json");
     res.send(getLocations(req.query.num));
 });
 
-app.post("/location", (req, res) => {
+router.post("/location", (req, res) => {
     res.set("Content-Type", "application/json");
     res.send(updateLocation(req.body));
 });
+app.use('/', router);
 
 app.listen(3000, () => (
     console.log("listening on port 3000")

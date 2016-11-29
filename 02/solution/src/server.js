@@ -17,18 +17,23 @@ app.use("/static", express.static("static"));
 app.use("/lib", express.static("lib"));
 
 
+// rewritten to change express.Router
+let router = express.Router();
+
 //changed to fat arrow, using getLocations imported fn
-app.get("/locations" , (req, res) => {
+router.get("/locations" , (req, res) => {
     res.set("Content-Type", "application/json");
     res.send(getLocations(req.query.num));
 });
 
 // add locations POST api to add json location to
 // locations array
-app.post("/location", (req, res) => {
+router.post("/location", (req, res) => {
     res.set("Content-Type", "application/json");
     res.send(updateLocation(req.body));
 });
+
+app.use("/", router);
 
 app.listen(3000, () => (
     console.log("listening on port 3000")
