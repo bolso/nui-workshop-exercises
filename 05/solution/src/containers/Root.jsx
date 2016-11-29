@@ -1,17 +1,17 @@
 
 import React  from 'react';
-
-import LocationPage from './LocationsPage';
 import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
 
-import LocationsList from './LocationsList';
+import LocationPage from '../components/LocationsPage';
+import LocationsList from '../components/LocationsList';
 
 export default () => (
     <Router history={hashHistory}>
         <Route path="/" component={LocationPage}>
             <IndexRoute component={LocationsList} />
             <Route path="add" getComponent={(loc, cb) =>
-                {require.ensure([], require => {cb(null, require('./LocationForm').default)})}}  />
+                {require.ensure([], require => {
+                    cb(null, require('../components/LocationForm').default)})}}/>
         </Route>
     </Router>
 )
