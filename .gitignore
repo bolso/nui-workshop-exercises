@@ -3,3 +3,4 @@ node_modules
 lib
 bundle.js
 dist
+assets.json
