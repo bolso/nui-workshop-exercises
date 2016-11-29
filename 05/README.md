@@ -8,6 +8,8 @@
 ## Bonus:
 - use code splitting for routes
 
+![](../images/05.gif)
+
 ## Steps:
 
 #### - install react-router

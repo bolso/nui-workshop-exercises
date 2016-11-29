@@ -20,7 +20,8 @@ export default React.createClass({
             },
             body: JSON.stringify(location)
         }).then((res) => res.json())
-        .then(locations => this.setState({locations}));
+        .then(location => this.setState({
+            locations: [...this.state.locations, location]}));
     },
 
     render() {
@@ -38,6 +39,7 @@ export default React.createClass({
                 {React.cloneElement(content || children, {
                     ...{locations}, ...{addLocationFn: this.addLocation}})
                 }
+
             </div>
         )
    }

@@ -6,5 +6,5 @@ import LocationsPage from './components/LocationsPage';
 
 ReactDOM.render(
     <LocationsPage/>,
-    document.getElementById("val")
+    document.getElementById("root")
 );
