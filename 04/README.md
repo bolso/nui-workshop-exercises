@@ -7,6 +7,8 @@
 - Add conditional field for ‘location size’ numEmpolyees > 100 ? “large” : “small”
 - Implement an ‘add new location’ form which uses the POST from previous exercise.
 
+![](../images/04.gif)
+
 
 ## Steps
 
@@ -40,7 +42,9 @@ npm install --save-dev react babel-preset-react
  ### create components/LocationsPage.jsx
  - rename components/LocationsPage.js to components/LocationsPage.jsx and rewrite  it to react.
  - make locations fetch in onComponentDidMount of this component
- 
+
 
  ### fix app.js
   - make it Render LocationsList component.
+
+http://localhost:3000/static/
