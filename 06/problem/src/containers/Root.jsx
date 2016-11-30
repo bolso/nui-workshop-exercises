@@ -1,6 +1,6 @@
 
 import React  from 'react';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 //importing Provider for react-redux
 ...

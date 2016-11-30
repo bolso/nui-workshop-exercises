@@ -16,7 +16,7 @@ export default {
         publicPath: `${config.nui.baseUrl}/dist/`
     },
     plugins: [
-        // addinng NuiAssetsPlugin
+        // adding NuiAssetsPlugin
       new NuiAssetsPlugin()
     ],
     module: {

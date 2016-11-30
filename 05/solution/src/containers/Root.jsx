@@ -1,5 +1,5 @@
 import React  from 'react';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import LocationPage from '../components/LocationsPage';
 import LocationsList from '../components/LocationsList';

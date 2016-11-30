@@ -11,7 +11,7 @@
 
 #### - install packages
 ```
-cd nui-workshop-exercices
+cd nui-workshop-exercises
 npm install --save @concur/nui-shell @concur/nui-config json-loader
 ```
 
