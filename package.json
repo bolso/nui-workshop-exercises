@@ -11,8 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@concur/nui-config": "^2.0.0",
+    "@concur/nui-shell": "^4.0.1",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "json-parser": "^1.1.5",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "react-redux": "^4.4.6",
