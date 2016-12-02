@@ -4,5 +4,5 @@ lib
 bundle.js
 dist
 assets.json
-src/translations/*
-!src/translations/en.js
+**/*/src/translations/*
+!**/*/src/translations/en.js
