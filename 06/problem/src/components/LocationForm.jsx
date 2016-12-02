@@ -21,7 +21,7 @@ export default React.createClass({
                     addLocation({
                         city: this.refs.city.value,
                         country: this.refs.country.value,
-                        numEmployees: this.refs.numEmployees.value
+                        numEmployees: parseInt(his.refs.numEmployees.value)
                     })
                 )}>Add</button>
             </div>
