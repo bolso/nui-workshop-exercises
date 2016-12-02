@@ -27,6 +27,8 @@ npm install --save @concur/nui-logger react-transform-catch-errors
 
 #### - change src/containers/Root.js
 - export NuiClient component
+- move rendering of <DevTools> to here
+
 
 #### - modify src/configureStore.js
 - import and apply nui-shell redux middlewares

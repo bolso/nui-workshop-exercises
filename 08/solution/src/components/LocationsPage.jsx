@@ -15,7 +15,6 @@ export default React.createClass({
 
         return (
             <div>
-                <DevTools />
                 <div>
                     {/*changing links*/}
                     <Link to={`${config.nui.baseUrl}/`}>Locations List</Link>{' '}
