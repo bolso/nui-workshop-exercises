@@ -1,0 +1,18 @@
+// add ../node_modules/.bin/npm_translate to prepack script
+...
+{
+  "name": "nui-workshop-exercises",
+  "version": "1.0.0",
+  "description": "exercises for nui-workshop",
+  "main": "index.js",
+  "scripts": {
+    "build": "../../node_modules/.bin/babel src --out-dir=lib",
+    "prepack": "npm run build",
+    "pack": "../../node_modules/.bin/webpack --config=webpack.config.babel.js",
+    "prestart": "npm run pack",
+    "start": "NODE_ENV=development node lib/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

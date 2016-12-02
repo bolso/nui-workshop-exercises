@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@concur/nui-config": "^2.0.0",
+    "@concur/nui-intl": "^3.0.0",
     "@concur/nui-logger": "^2.0.0",
     "@concur/nui-shell": "^4.0.1",
     "body-parser": "^1.15.2",
