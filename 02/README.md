@@ -21,7 +21,7 @@ npm install --save-dev babel-cli babel-plugin-transform-object-rest-spread babel
 ```
 ### create .babelrc file
 - Add "transform-runtime",  "transform-object-rest-spread" to plugins
-- Add "es2017" and "es2015" to presets
+- Add "es2017", "es2015" to presets
 
 
 
@@ -36,13 +36,22 @@ scripts: {
     "start": "node lib/server.js",
 }
 ```
-### change static/index.html so serve app.js file from lib/ folder
 
 ### rewrite service/locations.js to use ES6
+- use map to assign id on each lement
+- produce updateLocation method that appends location passed as an argument into the global list of locations
 
-### rewrite src/server.js to use ES6
+### modify src/server.js
+- rewrite src/server.js to use ES6
+- add save location  service
+- add bodyParser and make sure app is using it
 
-### add location PUT service
+### - change static/app.js
+ - use some es6 statemets $ for formatting the output
+
+
+### change static/index.html
+-  serve app.js file from lib/ folder
 
 ### kickoff the server
 ```
