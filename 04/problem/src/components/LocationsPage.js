@@ -1,4 +1,4 @@
-// rewrite as react compenet that fetches the data onComponentDidMount
+// rewrite as react compenent that fetches the data onComponentDidMount
 // and stores locations in the state
 
 // component should render list of locations and use Location component to
