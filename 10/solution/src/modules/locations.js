@@ -6,15 +6,20 @@ const DID_FETCH_LOCATIONS = "DID_FETCH_LOCATIONS";
 const START_ADD_LOCATION = "START_ADD_LOCATION";
 const DID_ADD_LOCATION = "DID_ADD_LOCATION";
 
+const RESET_STATUS = "RESET_STATUS";
+
 import config from '../config';
 
+export const resetStatus= () => (dispatch, getState) => {
+    dispatch({type: RESET_STATUS});
+};
 
 export const fetchLocations = () => (dispatch, getState) => {
-  dispatch({type:START_FETCH_LOCATIONS});
+    dispatch({type:START_FETCH_LOCATIONS});
 
-      fetch(`${config.nui.baseUrl}/locations`).then((res) => res.json()).then((payload) => {
+    fetch(`${config.nui.baseUrl}/locations`).then((res) => res.json()).then((payload) => {
         dispatch({type:DID_FETCH_LOCATIONS, payload});
-      })
+    })
 };
 
 export const addLocation = (location) => (dispatch, getState) => {
@@ -62,8 +67,11 @@ const status = (state = 'idle', {type, payload}) => {
         case START_FETCH_LOCATIONS:
             return 'fetching';
 
-        default:
+        case RESET_STATUS:
             return 'idle';
+
+        default:
+            return state;
     }
 }
 

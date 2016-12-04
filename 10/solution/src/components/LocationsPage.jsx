@@ -19,7 +19,12 @@ export default React.createClass({
     },
 
     render() {
-        let {content, title, children, locations, status} = this.props;
+        let {content,
+            title,
+            children,
+            locations,
+            status,
+            resetStatus} = this.props;
 
         return (
             <div>
@@ -28,8 +33,10 @@ export default React.createClass({
 
                 {/* adding add button */}
                 <div className="pull-right">
-                    <Button onClick={() => (
-                        browserHistory.push(`${config.nui.baseUrl}/add`))}>
+                    <Button onClick={() => {
+                        resetStatus();
+                        browserHistory.push(`${config.nui.baseUrl}/add`)}}>
+
                         <FormattedMessage id="locations.links.AddLocation" />
                     </Button>
                 </div>

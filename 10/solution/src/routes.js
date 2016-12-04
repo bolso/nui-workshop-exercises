@@ -7,7 +7,6 @@ import config from './config';
 import {NuiPageContainer} from '@concur/nui-shell';
 
 import LocationsPage from './containers/LocationsPage';
-import LocationsList from './containers/LocationsList';
 import App from './containers/App';
 
 //importing SideBar
