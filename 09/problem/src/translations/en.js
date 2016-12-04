@@ -1,5 +1,7 @@
 module.exports = {
     locations: {
+        // add title for locations
+        title: ...
         links: {
             "AddLocation": "Add Location",
             "LocationsList": "Locations"

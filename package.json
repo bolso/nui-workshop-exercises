@@ -15,6 +15,7 @@
     "@concur/nui-intl": "^3.0.0",
     "@concur/nui-logger": "^2.0.0",
     "@concur/nui-shell": "^4.0.1",
+    "@concur/nui-widgets": "^4.6.1",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "json-parser": "^1.1.5",

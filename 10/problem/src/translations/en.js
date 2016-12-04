@@ -6,7 +6,9 @@ module.exports = {
             "LocationsList": "Locations"
         },
         buttons: {
-            "Add": "Add"
+            "Add": "Add",
+            "Close": "Close",
+            "Cancel": "Cancel"
         },
         fieldLabels: {
             "Country": "Country",
@@ -18,6 +20,10 @@ module.exports = {
             sizeCodes: {
                 small: "Small",
                 big: "Large"
+            },
+            status: {
+                adding: "Adding Location, please wait...",
+                added: "Location Added"
             }
         },
         totalEmployees: "As of {today} total number of employees is {total}",
