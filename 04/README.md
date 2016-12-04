@@ -26,7 +26,8 @@ cd nui-workshop-exercises
 npm install --save-dev react babel-preset-react
 ```
 
-#### - make sure "react" preset is added to .babelrc
+#### - fix .babelrc
+- make sure "react" preset is added to .babelrc
 
 #### - create Location Component
  - ./components/Location.jsx
@@ -35,6 +36,7 @@ npm install --save-dev react babel-preset-react
      on number of employees)
 
  ### create components/LocationsForm.jsx
+- create simple 3 fields component to add location
 
  ### create components/LocationsList.jsx
 - assume locations list is coming to this component as part of properties
