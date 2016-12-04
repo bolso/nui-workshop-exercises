@@ -37,12 +37,6 @@ cd nui-workshop-exercises
 npm install express --save
 ```
 
-### - Create src/server.js file
-
-### - Create static/index.html file
-
-### - Create static/app.js file
-
 ### - install uuid package
 ```
 cd nui-workshop-exercises
@@ -50,14 +44,32 @@ npm install --save uuid
 ```
 
 ### - Create src/service/locations.js
+- require uuid module
+- define initial list of locations as an array
+- assign unique id (use uuid) for each location in array
+- export function that returns list of location
 
-### - import locations.js and create locations service in server.js
+
+### - Create static/app.js file
+- add Hello world message to be rendered into root html
+
+### - Create static/index.html file
+- create container div with id=root
+- add script src tag for static/app.js
+
+### - Create src/server.js file
+- import express and init it
+- make express using static route to serve static files from /static  folder
+- import src/service/locations.js and create locations service that returns getLocations function from  src/service/locations.js
+
+
 
 ### - start node and test your app
+
 ```
 node src/server.js
 ```
 - point your browser to http://localhost:3000/static and make sure you see  "Hello world"
 
-- point your browser to http://localhost:3000/locations and make sure you are
+-   s point your browser to http://localhost:3000/locations and make sure you are
 getting the list of locations. Play with ?num=N query string. Make sure number of returned locations matches N.
