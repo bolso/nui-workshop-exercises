@@ -38,7 +38,7 @@ scripts: {
 ```
 
 ### rewrite service/locations.js to use ES6
-- use map to assign id on each lement
+- use map to assign id on each element
 - produce updateLocation method that appends location passed as an argument into the global list of locations
 
 ### modify src/server.js
@@ -47,7 +47,7 @@ scripts: {
 - add bodyParser and make sure app is using it
 
 ### - change static/app.js
- - use some es6 statemets $ for formatting the output
+ - use some es6 statements for formatting the output
 
 
 ### change static/index.html
