@@ -40,13 +40,15 @@ npm install --save-dev react babel-preset-react
 
  ### create components/LocationsList.jsx
 - assume locations list is coming to this component as part of properties
--
+
  ### create components/LocationsPage.jsx
- - rename components/LocationsPage.js to components/LocationsPage.jsx and rewrite  it to react.
+ - rewrite  it to react.
  - make locations fetch in onComponentDidMount of this component
+ - render LocationsList and LocationsForm components on LocationsPage
 
 
  ### fix app.js
-  - make it Render LocationsList component.
+  - make it Render LocationsPage component.
+
 
 http://localhost:3000/static/
