@@ -18,7 +18,7 @@ cd nui-workshop-exercises
 npm install --save react-router
 ```
 
-#### - Create page components/Root.jsx with routes
+#### - Create page containers/Root.jsx with routes
 
 #### - Change app.js
 - change app.js to load component created in components/Root.jsx
