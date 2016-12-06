@@ -1,4 +1,4 @@
-//import react locationsList component from compoents/LocationList
+//import react locationsPage component from compoents/LocationPage
 //and render it to div with id="root" using ReactDOM.render
 
 import React  from 'react';
