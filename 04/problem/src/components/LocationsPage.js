@@ -15,3 +15,45 @@ export default () => {
         </ul>`;
     });
 }
+/*
+export default React.createClass({
+    getInitialState() {
+        // set inital state (empty location array
+        ....
+    },
+
+    componentDidMount() {
+        //implement fetch location
+       ...
+    },
+
+    addLocation(location) {
+        // implement addLocation
+        fetch("/location", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(location)
+        }).then((res) => res.json())
+        .then(location =>
+
+            // put location in state
+
+    },
+
+    render() {
+
+        // get locations from state
+        return (
+            <div>
+                 {/* render locationList*/}
+                    ...
+                 {/* render locationForm*/}
+                 ...
+            </div>
+        )
+   }
+
+})
+*/
