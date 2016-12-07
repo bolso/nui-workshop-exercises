@@ -32,9 +32,9 @@ export default React.createClass({
                 <h1><FormattedMessage id="locations.title" /></h1>
 
                 <div className="pull-right">
-                    <Button onClick={() => (
+                    <Button onClick={() => {
                         resetStatus();
-                        browserHistory.push(`${config.nui.baseUrl}/add`))}>
+                        browserHistory.push(`${config.nui.baseUrl}/add`)}}>
                         <FormattedMessage id="locations.links.AddLocation" />
                     </Button>
                 </div>
